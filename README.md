@@ -111,18 +111,6 @@ docker compose up --build
 - Простая анимация появления карточек.
 - Базовая адаптивность (320–1440px).
 
-## Замечания реализации
-- БД: SQLite, файл создаётся автоматически. Датавремя хранится в UTC (`DateTime(timezone=True)`).
-- Pydantic v2: схемы настроены через `ConfigDict(from_attributes=True)`.
-- CORS открыт для dev (в `app.main`).
-
-## Что можно расширить
-- Alembic миграции.
-- Редактирование title/description на фронтенде.
-- Пагинация и сортировка списка.
-- Логи/конфиги (ENV) и CI (линт/тест).
-- Тесты фронтенда (RTL).
-
 ## Быстрые команды
 - Backend dev: `uvicorn app.main:app --reload`
 - Frontend dev: `npm run dev`
