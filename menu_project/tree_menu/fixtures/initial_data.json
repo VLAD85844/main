@@ -1,0 +1,82 @@
+[
+{
+  "model": "tree_menu.menu",
+  "pk": 1,
+  "fields": {
+    "name": "main_menu",
+    "description": "Главное меню сайта"
+  }
+},
+{
+  "model": "tree_menu.menuitem",
+  "pk": 1,
+  "fields": {
+    "menu": 1,
+    "title": "Главная",
+    "url": "/",
+    "named_url": "",
+    "parent": null,
+    "order": 0
+  }
+},
+{
+  "model": "tree_menu.menuitem",
+  "pk": 2,
+  "fields": {
+    "menu": 1,
+    "title": "О нас",
+    "url": "/about/",
+    "named_url": "",
+    "parent": null,
+    "order": 1
+  }
+},
+{
+  "model": "tree_menu.menuitem",
+  "pk": 3,
+  "fields": {
+    "menu": 1,
+    "title": "Услуги",
+    "url": "/services/",
+    "named_url": "",
+    "parent": 2,
+    "order": 0
+  }
+},
+{
+  "model": "tree_menu.menuitem",
+  "pk": 4,
+  "fields": {
+    "menu": 1,
+    "title": "Веб-разработка",
+    "url": "/services/web/",
+    "named_url": "",
+    "parent": 3,
+    "order": 0
+  }
+},
+{
+  "model": "tree_menu.menuitem",
+  "pk": 5,
+  "fields": {
+    "menu": 1,
+    "title": "Дизайн",
+    "url": "/services/design/",
+    "named_url": "",
+    "parent": 3,
+    "order": 1
+  }
+},
+{
+  "model": "tree_menu.menuitem",
+  "pk": 6,
+  "fields": {
+    "menu": 1,
+    "title": "Контакты",
+    "url": "",
+    "named_url": "contact",
+    "parent": null,
+    "order": 2
+  }
+}
+]
